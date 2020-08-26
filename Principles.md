@@ -100,18 +100,17 @@ xxx
 ## Logging
 
 - Implement logging for each program
-- Make logging-target configurable
-  - journald (default)
-  - console/stderr
+- Make logging-target configurable (journald (default), console/stderr)
 - Make loglevel configurable
-  - log all messages with a loglevel equal or smaller than the given loglevel  
-    | Level         | Description |
-    |:--------------|:------------|
-    | Fatal         | program is unusable |
-    | Critical      | a critical error occured |
-    | Warning       | indicate that an error will occur if action is not taken |
-    | Informational | normal operational messages that require no action |
-    | Debug         | information useful to developers for debugging the application |
+- log all messages with a loglevel equal or smaller than the given loglevel  
+
+| Level         | Description |
+|:--------------|:------------|
+| Fatal         | program is unusable |
+| Critical      | a critical error occured |
+| Warning       | indicate that an error will occur if action is not taken |
+| Informational | normal operational messages that require no action |
+| Debug         | information useful to developers for debugging the application |
 
 
 ## Documentation
@@ -126,14 +125,16 @@ simple way.
 ## Comply with applicable standards
 
 - [Filesystem Hierarchy Standard](https://en.m.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
+- [Freedesktop Standards](https://www.freedesktop.org/wiki/Specifications/)
+- [Freedesktop Software](https://www.freedesktop.org/wiki/Software/)
 
 
 ## Branches 
 
 - Use one main branch
-- create a branch for each eatures and each issue
+- create a branch for each feature or issue
 - commit early and often, do not hide anything
-- when finished features or issues are tested, create a pull-request (bzw. merge)
+- when finished features or issues are tested create a pull-request
 
 https://fbrnc.net/blog/2014/12/keeping-it-simple-git-workflow
 https://shalikafdo.files.wordpress.com/2016/02/git5.png?w=604&h=402
