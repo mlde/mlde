@@ -1,15 +1,15 @@
-# What
+# MLDE
+
+## What
 
 - modular
 - linux 
 - desktop
 - environment
-
-
 - [principles](principles.md)
 
 
-# Why
+## Why
 
 - modular
 - simple
@@ -20,12 +20,12 @@
 - fast
 
 
-# Where
+## Where
 
 Right here at github - and everywhere!
 
 
-# Who
+## Who
 
 You!
 
@@ -35,6 +35,8 @@ You!
 - [human interface guidelines](HumanInterfaceGuidelines.md)
 
 
-# When
+## When
 
-Well, that makes it a lot easier [donations](Donations.md)
+Well, that makes it a lot easier 
+
+[donations](Donations.md)
