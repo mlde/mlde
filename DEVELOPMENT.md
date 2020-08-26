@@ -11,19 +11,19 @@
 
 
 + Make each program do one thing well
-+ each program should be responsible for one thing only
+  + each program should be responsible for one thing only
 
 
 
 * Make each program easily interchangeable
-* aim for a composition of programs that can be fitted together or arranged in a variety of ways
-* aim for no dependencies on other programs
+  * aim for a composition of programs that can be fitted together or arranged in a variety of ways
+  * aim for no dependencies on other programs
 
 
 
 - Make each program lightweight and fast
-- design for low footprint on disk, memory and cpu
-- balance the usage of disk, memory and cpu for efficiency
+  - design for low footprint on disk, memory and cpu
+  - balance the usage of disk, memory and cpu for efficiency
 
 
 ## Usefull documentation
