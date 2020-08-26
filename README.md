@@ -5,7 +5,7 @@ A modular linux desktop environment based on the traditional unix philosophy, ut
 - free and open source
 - each program does one thing and does it well
 - each program is lightweight on resources and fast
-- exclusively use of plain-text configuration and theme files
+- exclusively use of plain-text files for configuration and theming
 - usefull documenation about installation, configuration and usage in a simple way
 
 
