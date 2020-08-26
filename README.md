@@ -1,5 +1,3 @@
-# MLDE
-
 ## What
 
 - modular
@@ -22,12 +20,12 @@
 
 ## Where
 
-Right here at github - and everywhere!
+right here at github - and everywhere!
 
 
 ## Who
 
-You!
+you!
 
 - [contributions](Contributions.md)
 - [code of conduct](CodeofConduct.md)
@@ -37,6 +35,6 @@ You!
 
 ## When
 
-Well, that makes it a lot easier 
+well, that makes it a lot easier
 
 [donations](Donations.md)
