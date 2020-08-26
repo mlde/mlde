@@ -8,35 +8,31 @@ https://opensource.guide/building-community/
 https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
 
 
-## General
-
-### Make each program do one thing well
+## Make each program do one thing well
 
 - each program should be responsible for one thing only
 
 
-### Make each program easily interchangeable
+## Make each program easily interchangeable
 
 - aim for a composition of programs that can be fitted together or arranged in a variety of ways
 - aim for no dependencies on other programs
 
 
-### Make each program lightweight and fast
+## Make each program lightweight and fast
 
 - design for low footprint on disk, memory and cpu
 - balance the usage of disk, disk, memory and cpu for efficiency
 
 
-## Configuration
-
-### Use text-based configuration files
+## Use text-based configuration files
 
 - Use only human-readable and text-based configuration files
 - The text-based configuriation files are decisive
 - Any gui-configuration-tools are based exclusively on the text-based configuration files
 
 
-#### Use configuration levels
+### Use configuration levels
 
 Get configuration-values:
 
@@ -50,17 +46,17 @@ Settings from actual configuration file override settings from previous read con
 So you can ie keep the general configuration and change just one option.
 
 
-#### Format of configuration files
+### Format of configuration files
 
 xxx
 
 
-### Use text-based theme files
+## Use text-based theme files
 
 - Use only human-readable and text-based theme files
 
 
-#### Use theme levels
+### Use theme levels
 
 Get the theme:
 1. compilation default
@@ -80,21 +76,19 @@ Settings from actual theme file override settings from previous read theme files
 So you can ie keep the general theme and change just one option.
 
 
-## Development
-
-### Use [C++](https://isocpp.org/) as programming language
+## Use [C++](https://isocpp.org/) as programming language
 
 [description incomplete]
 
 - compatibility with QT5
 
 
-### Use [qt](https://www.qt.io/) as gui-toolkit
+## Use [qt](https://www.qt.io/) as gui-toolkit
 
 [description missing]
 
 
-### Use [gcc](https://gcc.gnu.org/) as compiler and linker
+## Use [gcc](https://gcc.gnu.org/) as compiler and linker
 
 - gcc is widely available and most likely already installed
 - avoid gcc-specific flags
@@ -102,7 +96,7 @@ So you can ie keep the general theme and change just one option.
 Exception from this principle: the [qt moc-tool](https://doc.qt.io/qt-5/moc.html) is necessary for the qt toolkit
 
 
-### Use [ninja](https://ninja-build.org/) as built-tool
+## Use [ninja](https://ninja-build.org/) as built-tool
 
 - You should know how to compile and link the program without a built-tool.
 - A build-tool is only a helper to automate this process.
@@ -112,7 +106,7 @@ Exception from this principle: the [qt moc-tool](https://doc.qt.io/qt-5/moc.html
 - a built-tool should not hide or abstract the work that is done
 
 
-### Logging
+## Logging
 
 - Implement logging for each program
 - Make logging-target configurable
@@ -130,7 +124,7 @@ Exception from this principle: the [qt moc-tool](https://doc.qt.io/qt-5/moc.html
     | Debug         | information useful to developers for debugging the application |
 
 
-### Documentation
+## Documentation
 
 - Provide usefull information about building, installation, configuration and usage in a
 simple way.
@@ -139,14 +133,14 @@ simple way.
 - See [lead](https://github.com/mlde/lead/) as example.
 
 
-### Comply with applicable standards
+## Comply with applicable standards
 
 [description incomplete]
 
 - [Filesystem Hierarchy Standard](https://en.m.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 
 
-### Use branches 
+## Branches 
 
 - Use one main branch
 - create a branch for each eatures and each issue
@@ -158,7 +152,7 @@ https://shalikafdo.files.wordpress.com/2016/02/git5.png?w=604&h=402
 https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
 
 
-### Use releases
+## Releases
 
 [description incomplete]
 
