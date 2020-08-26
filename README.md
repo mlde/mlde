@@ -2,13 +2,11 @@
 
 A modular linux desktop environment based on the traditional unix philosophy, utilizing modern technology and look.
 
+- free and open source
 - each program does one thing and does it well
 - each program is lightweight on resources and fast
-- exclusively use of plain-text configuration files
-- exclusively use of plain-text theme files
-- applicable standards are respected
-- good documentation is provided
-- free and open source
+- exclusively use of plain-text configuration and theme files
+- usefull documenation about installation, configuration and usage in a simple way
 
 
 ## Why
