@@ -30,10 +30,9 @@ right here at github - and everywhere!
 
 you!
 
-- [contributions](Contributions.md)
+- [contribute](Contribute.md)
 - [code of conduct](CodeOfConduct.md)
-- [coding style](CodingStyle.md)
-- [human interface guidelines](HumanInterfaceGuidelines.md)
+- [development](Development.md)
 
 
 ## When
