@@ -1,4 +1,14 @@
-# Principles
+# Development
+
+
+## We like
+
+- [Simple, Lovable, Complete](https://blog.asmartbear.com/slc.html)
+- [Your aren't gonna need it](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
+- [Keep it simple, stupid](https://en.wikipedia.org/wiki/KISS_principle)
+- [Don't repeat yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+- [Rules of Three](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming))
+- [Release early, release often](https://en.wikipedia.org/wiki/Release_early,_release_often)
 
 
 ### Make each program do one thing well
@@ -18,19 +28,7 @@
 - balance the usage of disk, memory and cpu for efficiency
 
 
-### Use text-based configuration files
-
-- use only human-readable and text-based configuration files
-- the text-based configuriation files are decisive
-- any gui-configuration-tools are based exclusively on the text-based configuration files
-
-
-### Use text-based theme files
-
-- Use only human-readable and text-based theme files
-
-
-### Provide good documentation
+## Provide good documentation
 
 - Provide usefull information about building, installation, configuration and usage in a
 simple way
@@ -131,16 +129,6 @@ xxx
 - [Filesystem Hierarchy Standard](https://en.m.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 - [Freedesktop Standards](https://www.freedesktop.org/wiki/Specifications/)
 - [Freedesktop Software](https://www.freedesktop.org/wiki/Software/)
-
-
-## We like
-
-- [Simple, Lovable, Complete](https://blog.asmartbear.com/slc.html)
-- [Your aren't gonna need it](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
-- [Keep it simple, stupid](https://en.wikipedia.org/wiki/KISS_principle)
-- [Don't repeat yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
-- [Rules of Three](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming))
-- [Release early, release often](https://en.wikipedia.org/wiki/Release_early,_release_often)
 
 
 ## Branches 
