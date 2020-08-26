@@ -8,13 +8,17 @@
 - [Release early, release often](https://en.wikipedia.org/wiki/Release_early,_release_often)
 
 
-- Make each program do one thing well
-- each program should be responsible for one thing only
 
 
-- Make each program easily interchangeable
-- aim for a composition of programs that can be fitted together or arranged in a variety of ways
-- aim for no dependencies on other programs
++ Make each program do one thing well
++ each program should be responsible for one thing only
+
+
+
+* Make each program easily interchangeable
+* aim for a composition of programs that can be fitted together or arranged in a variety of ways
+* aim for no dependencies on other programs
+
 
 
 - Make each program lightweight and fast
