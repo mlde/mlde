@@ -1,6 +1,3 @@
-# Development
-
-
 ## We like
 
 - [Simple, Lovable, Complete](https://blog.asmartbear.com/slc.html)
@@ -11,24 +8,21 @@
 - [Release early, release often](https://en.wikipedia.org/wiki/Release_early,_release_often)
 
 
-### Make each program do one thing well
-
+- Make each program do one thing well
 - each program should be responsible for one thing only
 
 
-### Make each program easily interchangeable
-
+- Make each program easily interchangeable
 - aim for a composition of programs that can be fitted together or arranged in a variety of ways
 - aim for no dependencies on other programs
 
 
-### Make each program lightweight and fast
-
+- Make each program lightweight and fast
 - design for low footprint on disk, memory and cpu
 - balance the usage of disk, memory and cpu for efficiency
 
 
-## Provide good documentation
+## Usefull documentation
 
 - Provide usefull information about building, installation, configuration and usage in a
 simple way
@@ -38,9 +32,9 @@ simple way
 
 ## Use text-based configuration files
 
-- use only human-readable and text-based configuration files
-- the text-based configuriation files are decisive
-- any gui-configuration-tools are based exclusively on the text-based configuration files
+- only human-readable and plain-text configuration files
+- the plain-text configuriation files are decisive
+- any gui-configuration-tools are based exclusively on the plaint-text configuration files
 
 
 ### Get configuration
@@ -62,7 +56,7 @@ xxx
 
 ## Use text-based theme files
 
-- Use only human-readable and text-based theme files
+- Use only human-readable and plain-text theme files
 
 ### Get theme
 1. compilation default
@@ -138,10 +132,11 @@ xxx
 - commit early and often, do not hide anything
 - create a pull-request for reviewed features or issues
 
-https://fbrnc.net/blog/2014/12/keeping-it-simple-git-workflow
-https://shalikafdo.files.wordpress.com/2016/02/git5.png?w=604&h=402
-https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
-https://wiki.qt.io/Review_Policy
+
+> - https://fbrnc.net/blog/2014/12/keeping-it-simple-git-workflow
+> - https://shalikafdo.files.wordpress.com/2016/02/git5.png?w=604&h=402
+> - https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
+> - https://wiki.qt.io/Review_Policy
 
 
 ## Releases
@@ -154,7 +149,8 @@ https://wiki.qt.io/Review_Policy
   - deb paket x86-64
   - AUR?
   
-  https://rpm.org/
-  https://manpages.debian.org/unstable/dpkg-dev/deb.5.en.html
-  https://wiki.archlinux.org/index.php/Arch_User_Repository
+  
+>   - https://rpm.org/
+>   - https://manpages.debian.org/unstable/dpkg-dev/deb.5.en.html
+>   - https://wiki.archlinux.org/index.php/Arch_User_Repository
   
