@@ -8,6 +8,8 @@ https://opensource.guide/building-community/
 https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
 
 
+## General
+
 ### Make each program do one thing well
 
 - each program should be responsible for one thing only
@@ -25,30 +27,7 @@ https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
 - balance the usage of disk, disk, memory and cpu for efficiency
 
 
-### Logging
-
-- Implement logging for each program
-- Make logging-target configurable
-  - journald (default)
-  - console/stderr
-- Make loglevel configurable
-  - log all messages with a loglevel equal or smaller than the given loglevel
-  - loglevel-values must be the same as kernel-loglevels
-
-| Value | Serverity     | Keyword | Description |
-|:------|:--------------|:--------|:------------|
-| 1     | Fatal         | fatal   | program is unusable |
-| 2     | Critical      | crit    | a critical error occured |
-| 4     | Warning       | warning | indicate that an error will occur if action is not taken |
-| 6     | Informational | info    | normal operational messages that require no action |
-| 7     | Debug         | debug   | information useful to developers for debugging the application |
-  
-
-### Desktop-Files
-
-- Provide xdg-desktop-files if aplicable
-- Provide translations within the desktop-file 
-
+## Configuration
 
 ### Use text-based configuration files
 
@@ -57,17 +36,7 @@ https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
 - Any gui-configuration-tools are based exclusively on the text-based configuration files
 
 
-#### Format of configuration files
-
-xxx
-
-
-### Use text-based theme files
-
-- Use only human-readable and text-based theme files
-
-
-### Easy configuration on every level
+#### Use configuration levels
 
 Get configuration-values:
 
@@ -81,7 +50,17 @@ Settings from actual configuration file override settings from previous read con
 So you can ie keep the general configuration and change just one option.
 
 
-### Easy theme customisation on every level
+#### Format of configuration files
+
+xxx
+
+
+### Use text-based theme files
+
+- Use only human-readable and text-based theme files
+
+
+#### Use theme levels
 
 Get the theme:
 1. compilation default
@@ -101,12 +80,7 @@ Settings from actual theme file override settings from previous read theme files
 So you can ie keep the general theme and change just one option.
 
 
-### Comply with applicable standards
-
-[description incomplete]
-
-- [Filesystem Hierarchy Standard](https://en.m.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
-
+## Development
 
 ### Use [C++](https://isocpp.org/) as programming language
 
@@ -122,10 +96,8 @@ So you can ie keep the general theme and change just one option.
 
 ### Use [gcc](https://gcc.gnu.org/) as compiler and linker
 
-[description incomplete]
-
 - gcc is widely available and most likely already installed
-- but do not use any specific gcc-flags
+- avoid gcc-specific flags
 
 Exception from this principle: the [qt moc-tool](https://doc.qt.io/qt-5/moc.html) is necessary for the qt toolkit
 
@@ -140,9 +112,25 @@ Exception from this principle: the [qt moc-tool](https://doc.qt.io/qt-5/moc.html
 - a built-tool should not hide or abstract the work that is done
 
 
-### Documentation
+### Logging
 
-[description incomplete]
+- Implement logging for each program
+- Make logging-target configurable
+  - journald (default)
+  - console/stderr
+- Make loglevel configurable
+  - log all messages with a loglevel equal or smaller than the given loglevel
+  
+    | Level         | Description |
+    |:--------------|:------------|
+    | Fatal         | program is unusable |
+    | Critical      | a critical error occured |
+    | Warning       | indicate that an error will occur if action is not taken |
+    | Informational | normal operational messages that require no action |
+    | Debug         | information useful to developers for debugging the application |
+
+
+### Documentation
 
 - Provide usefull information about building, installation, configuration and usage in a
 simple way.
@@ -151,9 +139,14 @@ simple way.
 - See [lead](https://github.com/mlde/lead/) as example.
 
 
-### Branches 
+### Comply with applicable standards
 
 [description incomplete]
+
+- [Filesystem Hierarchy Standard](https://en.m.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
+
+
+### Use branches 
 
 - Use one main branch
 - create a branch for each eatures and each issue
@@ -165,7 +158,7 @@ https://shalikafdo.files.wordpress.com/2016/02/git5.png?w=604&h=402
 https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
 
 
-### Releases
+### Use releases
 
 [description incomplete]
 
