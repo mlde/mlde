@@ -134,11 +134,12 @@ simple way.
 - Use one main branch
 - create a branch for each feature or issue
 - commit early and often, do not hide anything
-- when finished features or issues are tested create a pull-request
+- create a pull-request for reviewed features or issues
 
 https://fbrnc.net/blog/2014/12/keeping-it-simple-git-workflow
 https://shalikafdo.files.wordpress.com/2016/02/git5.png?w=604&h=402
 https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
+https://wiki.qt.io/Review_Policy
 
 
 ## Releases
@@ -146,7 +147,12 @@ https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workf
 - Releases are tags on the main-branch at appropriate moments
 - Release numbers are simply incremental
 - Each Release should contain
-  - archiv of the source
+  - tar.gz of the source
   - rpm paket x86-64
   - deb paket x86-64
   - AUR?
+  
+  https://rpm.org/
+  https://manpages.debian.org/unstable/dpkg-dev/deb.5.en.html
+  https://wiki.archlinux.org/index.php/Arch_User_Repository
+  
