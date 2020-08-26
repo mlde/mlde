@@ -34,7 +34,7 @@ simple way
 - Avoid scattered documentation
 
 
-## Use text-based configuration files
+## Use plain-text configuration files
 
 - only human-readable and plain-text configuration files
 - the plain-text configuriation files are decisive
@@ -58,7 +58,7 @@ simple way
 xxx
 
 
-## Use text-based theme files
+## Use plain-text theme files
 
 - Use only human-readable and plain-text theme files
 
