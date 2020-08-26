@@ -13,9 +13,10 @@ A modular linux desktop environment based on the traditional unix philosophy, ut
 
 - modular
 - simple
-- lightweight
+- lovable
 - configurable
 - customizable
+- lightweight
 - modern
 - fast
 
