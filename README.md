@@ -31,7 +31,6 @@ right here at github - and everywhere!
 you!
 
 - [contribute](Contribute.md)
-- [code of conduct](CodeOfConduct.md)
 - [development](Development.md)
 
 
