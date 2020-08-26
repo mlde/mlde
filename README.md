@@ -5,11 +5,6 @@ A modular linux desktop environment based on the traditional unix philosophy, ut
 - [principles](Principles.md)
 
 
-> https://opensource.guide/starting-a-project/
-> https://opensource.guide/building-community/
-> https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
-
-
 ## Why
 
 - modular
