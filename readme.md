@@ -30,12 +30,12 @@ right here at github - and everywhere!
 
 you!
 
-- [contribute](Contribute.md)
-- [development](Development.md)
+- [contribute](contribute.md)
+- [development](development.md)
 
 
 ## When
 
 well, that makes it a lot easier
 
-- [donations](Donations.md)
+- [donations](donations.md)
