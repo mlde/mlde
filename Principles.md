@@ -7,69 +7,83 @@ https://opensource.guide/starting-a-project/
 https://opensource.guide/building-community/
 https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
 
-Prinzipien durchgehen und ggf ergänzen!
-
 
 ### Make each program do one thing well
 
-[description missing]
+- each program should be responsible for one thing only
 
 
 ### Make each program easily interchangeable
 
-[description missing]
+- aim for a composition of programs that can be fitted together or arranged in a variety of ways
+- aim for no dependencies on other programs
 
 
-### Make each program as lightweight and fast as possible
+### Make each program lightweight and fast
 
-[description missing]
+- design for low footprint on disk, memory and cpu
+- balance the usage of disk, disk, memory and cpu for efficiency
 
 
 ### Logging
-xxx
 
+- Implement logging for each program
+- Make logging-target configurable
+  - journald (default)
+  - console/stderr
+- Make loglevel configurable
+  - log all messages with a loglevel equal or smaller than the given loglevel
+  - loglevel-values must be the same as kernel-loglevels
+
+| Value | Serverity     | Keyword | Description |
+|:------|:--------------|:--------|:------------|
+| 1     | Fatal         | fatal   | program is unusable |
+| 2     | Critical      | crit    | a critical error occured |
+| 4     | Warning       | warning | indicate that an error will occur if action is not taken |
+| 6     | Informational | info    | normal operational messages that require no action |
+| 7     | Debug         | debug   | information useful to developers for debugging the application |
+  
 
 ### Desktop-Files
-xxx
+
+- Provide xdg-desktop-files if aplicable
+- Provide translations within the desktop-file 
 
 
 ### Use text-based configuration files
 
-[description incomplete]
+- Use only human-readable and text-based configuration files
+- The text-based configuriation files are decisive
+- Any gui-configuration-tools are based exclusively on the text-based configuration files
 
-- The text-based configuriation files are decisive.
-- Any gui-configuration-tools are based exclusively on the text-based configuration files.
+
+#### Format of configuration files
+
+xxx
 
 
 ### Use text-based theme files
 
-[description missing]
+- Use only human-readable and text-based theme files
 
 
 ### Easy configuration on every level
 
-[description incomplete]
-[format of configuration files]
-
 Get configuration-values:
 
 1. compilation default
-2. global configuration-file in /etc/xdg/app/app.conf
-3. local configuration-file in ~/.config/app/app.conf
-4. configuration-file as argument to the app
-5. single-parameter as argument to the app
+2. global configuration-file in /etc/xdg/[program]/[program].conf
+3. local configuration-file in ~/.config/[program]/[program].conf
+4. configuration-file as argument to the program
+5. single-parameter as argument to the program
 
-Settings from a configuration file override settings from previous read configuration files.
+Settings from actual configuration file override settings from previous read configuration files.
 So you can ie keep the general configuration and change just one option.
 
 
 ### Easy theme customisation on every level
 
-[description incomplete]
-[format of theme files]
-
 Get the theme:
-
 1. compilation default
 2. global qt-configuration
 3. local qt-configuration
@@ -78,13 +92,12 @@ Get the theme:
 6. argument to the app
 
 Find the theme:
-
 1. global theme in [missing]
 2. local theme in ~/[missing]
 3. global theme from app in [missing]
 4. local theme from app in ~/[missing]
 
-Settings from a theme file override settings from previous read theme files.
+Settings from actual theme file override settings from previous read theme files.
 So you can ie keep the general theme and change just one option.
 
 
