@@ -4,7 +4,7 @@
 - linux 
 - desktop
 - environment
-- [principles](principles.md)
+- [principles](Principles.md)
 
 
 ## Why
@@ -28,7 +28,7 @@ right here at github - and everywhere!
 you!
 
 - [contributions](Contributions.md)
-- [code of conduct](CodeofConduct.md)
+- [code of conduct](CodeOfConduct.md)
 - [coding style](CodingStyle.md)
 - [human interface guidelines](HumanInterfaceGuidelines.md)
 
