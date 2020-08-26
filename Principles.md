@@ -22,19 +22,17 @@ https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
 ## Make each program lightweight and fast
 
 - design for low footprint on disk, memory and cpu
-- balance the usage of disk, disk, memory and cpu for efficiency
+- balance the usage of disk, memory and cpu for efficiency
 
 
 ## Use text-based configuration files
 
-- Use only human-readable and text-based configuration files
-- The text-based configuriation files are decisive
-- Any gui-configuration-tools are based exclusively on the text-based configuration files
+- use only human-readable and text-based configuration files
+- the text-based configuriation files are decisive
+- any gui-configuration-tools are based exclusively on the text-based configuration files
 
 
-### Use configuration levels
-
-Get configuration-values:
+### Get configuration
 
 1. compilation default
 2. global configuration-file in /etc/xdg/[program]/[program].conf
@@ -42,8 +40,8 @@ Get configuration-values:
 4. configuration-file as argument to the program
 5. single-parameter as argument to the program
 
-Settings from actual configuration file override settings from previous read configuration files.
-So you can ie keep the general configuration and change just one option.
+- Settings from actual configuration file override settings from previous read configuration files.
+- So you can ie keep the general configuration and change just one option.
 
 
 ### Format of configuration files
@@ -55,10 +53,7 @@ xxx
 
 - Use only human-readable and text-based theme files
 
-
-### Use theme levels
-
-Get the theme:
+### Get theme
 1. compilation default
 2. global qt-configuration
 3. local qt-configuration
@@ -66,41 +61,37 @@ Get the theme:
 5. local app configuration in ~/.config/app/app.conf
 6. argument to the app
 
-Find the theme:
+### Load theme
 1. global theme in [missing]
 2. local theme in ~/[missing]
 3. global theme from app in [missing]
 4. local theme from app in ~/[missing]
 
-Settings from actual theme file override settings from previous read theme files.
-So you can ie keep the general theme and change just one option.
+- Settings from actual theme file override settings from previous read theme files.
+- So you can ie keep the general theme and change just one option.
 
 
 ## Use [C++](https://isocpp.org/) as programming language
-
-[description incomplete]
 
 - compatibility with QT5
 
 
 ## Use [qt](https://www.qt.io/) as gui-toolkit
 
-[description missing]
+- [description missing]
 
 
 ## Use [gcc](https://gcc.gnu.org/) as compiler and linker
 
 - gcc is widely available and most likely already installed
 - avoid gcc-specific flags
-
-Exception from this principle: the [qt moc-tool](https://doc.qt.io/qt-5/moc.html) is necessary for the qt toolkit
+- Exception: the [qt moc-tool](https://doc.qt.io/qt-5/moc.html) is necessary for qt
 
 
 ## Use [ninja](https://ninja-build.org/) as built-tool
 
 - You should know how to compile and link the program without a built-tool.
 - A build-tool is only a helper to automate this process.
-- a built-tool should invoke the compiler and linker only
 - a built-tool should not work as install-tool
 - a built-tool should not add additional complexity
 - a built-tool should not hide or abstract the work that is done
@@ -113,8 +104,7 @@ Exception from this principle: the [qt moc-tool](https://doc.qt.io/qt-5/moc.html
   - journald (default)
   - console/stderr
 - Make loglevel configurable
-  - log all messages with a loglevel equal or smaller than the given loglevel
-  
+  - log all messages with a loglevel equal or smaller than the given loglevel  
     | Level         | Description |
     |:--------------|:------------|
     | Fatal         | program is unusable |
@@ -135,8 +125,6 @@ simple way.
 
 ## Comply with applicable standards
 
-[description incomplete]
-
 - [Filesystem Hierarchy Standard](https://en.m.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 
 
@@ -153,8 +141,6 @@ https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workf
 
 
 ## Releases
-
-[description incomplete]
 
 - Releases are tags on the main-branch at appropriate moments
 - Release numbers are simply incremental
