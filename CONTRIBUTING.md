@@ -38,7 +38,7 @@ Did we already mention that you are awesome? Please look through the open issues
 
 - If you have any questions simply respond to the issue
 - Please keep our [development philosophy](https://github.com/mlde/mlde/blob/master/DEVELOPMENT.md) in mind
-- Please use the [fork-and-branch workflow[(https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/)
+- Please use the [fork-and-branch workflow](https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/)
 
 ## Licence
 
