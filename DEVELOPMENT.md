@@ -137,6 +137,8 @@ simple way
 - commit early and often, do not hide anything
 - create a pull-request for reviewed features or issues
 
+https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/
+
 
 
 ## Releases
