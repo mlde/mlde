@@ -38,12 +38,10 @@ Did we already mention that you are awesome? Please look through the open [issue
 
 - If you have any questions simply respond to the issue
 - Please keep our [development philosophy](https://github.com/mlde/mlde/blob/master/DEVELOPMENT.md) in mind
-- Please use the fork-and-branch workflow:
-  - https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/
-  - https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
+- Please use the [fork-and-branch workflow[(https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/)
 
 ## Licence
 
 - to support free and open software we use [GPLv2](https://choosealicense.com/licenses/gpl-2.0/)
-- by contributing, your contribution will be subject to GPLv2
+- by contributing your contribution will be subject to GPLv2
 
