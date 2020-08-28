@@ -40,6 +40,6 @@ Did we already mention that you are awesome? Please look through the open issues
 - Please keep our [development philosophy](https://github.com/mlde/mlde/blob/master/DEVELOPMENT.md) in mind
 - Please use the [fork-and-branch workflow](https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/)
 
-## Licence
+#### Licence
 
 - to support free and open software we use [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
