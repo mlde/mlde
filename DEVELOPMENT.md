@@ -64,11 +64,11 @@ simple way
 - theming options are inherited and overriden by higher priority sources where 0 is the highest priority
 - there are several themes used by programs
 
-| theme | option | description |
-|:------|:-------|:------------|
-| controls | control-theme | control styles |
-| colors | color-theme | colors for control style |
-| icons | icon-theme | icons for controls |
+| theme | description |
+|:------|:------------|
+| control-theme | control styles |
+| color-theme | colors for control style |
+| icon-theme | icons for controls |
 
 
 #### set theme
@@ -83,7 +83,7 @@ simple way
 | 5 | compilation | compilation default |
 
 
-#### load theme
+#### load control theme
 
 | priority | source | description |
 |:---------|:-------|:------------|
@@ -93,12 +93,24 @@ simple way
 | 3 | /usr/share/themes/[theme]/ | global theme |
 
 
+#### load icon theme
+
 | priority | source | description |
 |:---------|:-------|:------------|
 | 0 | /home/[user]/.config/[program]/icons/[theme]/ | program local theme |
 | 1 | /usr/share/[program]/icons/[theme]/ | program global theme |
 | 2 | /home/[user]/.local/share/icons/[theme]/ | local theme |
 | 3 | /usr/share/icons/[theme]/ | global theme |
+
+
+#### load color theme
+
+| priority | source | description |
+|:---------|:-------|:------------|
+| 0 | /home/[user]/.config/[program]/color-schemes/[theme].colors | program local theme |
+| 1 | /usr/share/[program]/color-schemes/[theme].colors | program global theme |
+| 2 | /home/[user]/.local/share/color-schemes/[theme].colors | local theme |
+| 3 | /usr/share/color-schemes/[theme].colors | global theme |
 
 
 ## Logging
