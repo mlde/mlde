@@ -13,7 +13,6 @@ A modular linux desktop environment with the traditional unix philosophy in mind
 
 - modular
 - simple
-- lovable
 - configurable
 - customizable
 - lightweight
