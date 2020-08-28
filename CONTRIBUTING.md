@@ -42,4 +42,4 @@ Did we already mention that you are awesome? Please look through the open issues
 
 #### Licence
 
-- to support free and open software we use [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
+To support free and open software we use [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
