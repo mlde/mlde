@@ -32,7 +32,7 @@ Please open an issue on github.
 
 
 
-## Contributions
+## Contribute
 
 Did we already mention that you are awesome? Please look through the open issues here on github.
 
