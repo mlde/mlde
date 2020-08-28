@@ -1,6 +1,6 @@
 ## What
 
-A modular linux desktop environment based on the traditional unix philosophy, utilizing modern technology and look.
+A modular linux desktop environment with the traditional unix philosophy in mind, utilizing modern technology and look.
 
 - free and open source
 - each program does one thing and does it well
