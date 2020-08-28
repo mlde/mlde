@@ -1,4 +1,4 @@
-## We like
+## Philosophy
 
 - [Simple, Lovable, Complete](https://blog.asmartbear.com/slc.html)
 - [Your aren't gonna need it](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
@@ -8,25 +8,21 @@
 - [Release early, release often](https://en.wikipedia.org/wiki/Release_early,_release_often)
 
 
-
+Keep the [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) in mind
 
 + Make each program do one thing well
   + each program should be responsible for one thing only
 
-
-
 * Make each program easily interchangeable
   * aim for a composition of programs that can be fitted together or arranged in a variety of ways
   * aim for no dependencies on other programs
-
-
 
 - Make each program lightweight and fast
   - design for low footprint on disk, memory and cpu
   - balance the usage of disk, memory and cpu for efficiency
 
 
-## Usefull documentation
+## Documentation
 
 - Provide usefull information about building, installation, configuration and usage in a
 simple way
@@ -34,9 +30,9 @@ simple way
 - Avoid scattered documentation
 
 
-## Use plain-text configuration files
+## Configuration
 
-- only human-readable and plain-text configuration files
+- only human-readable plain-text configuration files
 - the plain-text configuriation files are decisive
 - any gui-configuration-tools are based exclusively on the plaint-text configuration files
 
@@ -58,9 +54,9 @@ simple way
 xxx
 
 
-## Use plain-text theme files
+## Theming
 
-- Use only human-readable and plain-text theme files
+- Use only human-readable plain-text theme files
 
 ### Get theme
 1. compilation default
@@ -79,31 +75,13 @@ xxx
 - Settings from actual theme file override settings from previous read theme files.
 - So you can ie keep the general theme and change just one option.
 
+## Tools
 
-## Use [C++](https://isocpp.org/) as programming language
-
-- compatibility with QT5
-
-
-## Use [qt](https://www.qt.io/) as gui-toolkit
-
-- [description missing]
-
-
-## Use [gcc](https://gcc.gnu.org/) as compiler and linker
-
-- gcc is widely available and most likely already installed
-- avoid gcc-specific flags
-- Exception: the [qt moc-tool](https://doc.qt.io/qt-5/moc.html) is necessary for qt
-
-
-## Use [ninja](https://ninja-build.org/) as built-tool
-
-- You should know how to compile and link the program without a built-tool.
-- A build-tool is only a helper to automate this process.
-- a built-tool should not work as install-tool
-- a built-tool should not add additional complexity
-- a built-tool should not hide or abstract the work that is done
+- use [c++](https://isocpp.org/) as programming language
+- use [qt](https://www.qt.io/) as gui-toolkit
+- use [gcc](https://gcc.gnu.org/) as compiler and linker
+- use [moc](https://doc.qt.io/qt-5/moc.html) for qt classes
+- use [ninja](https://ninja-build.org/) as built-tool
 
 
 ## Logging
@@ -122,7 +100,9 @@ xxx
 | Debug         | information useful to developers for debugging the application |
 
 
-## Comply with applicable standards
+## Standards
+
+Comply with applicable standards
 
 - [Filesystem Hierarchy Standard](https://en.m.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 - [Freedesktop Standards](https://www.freedesktop.org/wiki/Specifications/)
