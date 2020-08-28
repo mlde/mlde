@@ -67,6 +67,10 @@ Branch Rules...
     * Note the jQuery Foundation Code of Conduct.
     * Send a pull request indicating that you have a CLA on file.
 
+### Licence
+
+We use GPLv2
+
 
 ### Code review process
 
