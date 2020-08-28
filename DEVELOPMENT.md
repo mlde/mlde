@@ -35,10 +35,10 @@ use this tools for development
 
 ## Documentation
 
-- Provide usefull information about building, installation, configuration and usage in a
+- provide usefull information about building, installation, configuration and usage in a
 simple way
-- Give full docmenation in the readme if possible
-- Avoid scattered documentation
+- give full documenation in the readme if possible
+- avoid scattered documentation
 
 
 
@@ -46,53 +46,59 @@ simple way
 
 - use only human-readable plain-text configuration files in ini-format
 - the plain-text configuriation files are decisive
-- any gui-configuration-tools must be based exclusively on the plaint-text configuration files
 - configuration options are inherited and overriden by higher priority sources where 0 is the highest priority
 
 | priority | source | description |
 |:---------|:-------|:------------|
-| 0 | argument | single-parameter as argument to the program |
-| 1 | argument | configuration-file as argument to the program |
-| 2 | /home/[user]/.config/[program]/[program].conf | local configuration-file |
-| 3 | /etc/xdg/[program]/[program].conf | global configuration-file |
+| 0 | argument | single-parameter as argument |
+| 1 | argument | configuration-file as argument |
+| 2 | /home/[user]/.config/[program]/[program].conf | local configuration |
+| 3 | /etc/xdg/[program]/[program].conf | global configuration |
 | 4 | compilation | compilation default |
 
 
 
 ## Theming
 
-there are different themes used
+- use only human-readable plain-text theme files in [qss format](https://doc.qt.io/qt-5/stylesheet-syntax.html)
+- theming options are inherited and overriden by higher priority sources where 0 is the highest priority
+- there are several themes used by programs
 
-window theme
-icon theme
-color theme
-control theme
-sound theme
+| theme | option | description |
+|:------|:-------|:------------|
+| controls | control-theme | control styles |
+| colors | color-theme | colors for control style |
+| icons | icon-theme | icons for controls |
 
 
+#### set theme
 
-- use only human-readable plain-text theme files
-- since we use qt toolkit, use the [qss format](https://doc.qt.io/qt-5/stylesheet-syntax.html)
+| priority | source | description |
+|:---------|:-------|:------------|
+| 0 | argument | argument to the program |
+| 1 | /home/[user]/.config/[program]/[program].conf | program local configuration |
+| 2 | /etc/xdg/[program]/[program].conf | program global configuration |
+| 3 | /home/[user]/.config/Trolltech.conf | qt local configuration |
+| 4 | /etc/xdg/Trolltech.conf | qt global configuration |
+| 5 | compilation | compilation default |
 
-#### Get theme
 
-1. compilation default
-2. global qt-configuration in /etc/xdg/Trolltech.conf
-3. local qt-configuration in /home/[user]/.config/Trolltech.conf
-4. global app configuriation in /etc/xdg/[program]/[program].conf
-5. local app configuration in /home/[user]/.config/[program]/[program].conf
-6. argument to the app
+#### load theme
 
-#### Load theme
+| priority | source | description |
+|:---------|:-------|:------------|
+| 0 | /home/[user]/.config/[program]/themes/[theme]/ | program local theme |
+| 1 | /usr/share/[program]/themes/[theme]/ | program global theme |
+| 2 | /home/[user]/.themes/[theme]/ | local theme |
+| 3 | /usr/share/themes/[theme]/ | global theme |
 
-1. global theme in /usr/share/themes/[theme]/
-2. local theme in /home/[user]/.themes/[theme]/
-3. global theme from app in [missing] 
-4. local theme from app in ~/[missing]
 
-- settings from actual theme file override settings from previous read theme files
-- so you can ie keep the general theme and change just one option.
-
+| priority | source | description |
+|:---------|:-------|:------------|
+| 0 | /home/[user]/.config/[program]/icons/[theme]/ | program local theme |
+| 1 | /usr/share/[program]/icons/[theme]/ | program global theme |
+| 2 | /home/[user]/.local/share/icons/[theme]/ | local theme |
+| 3 | /usr/share/icons/[theme]/ | global theme |
 
 
 ## Logging
