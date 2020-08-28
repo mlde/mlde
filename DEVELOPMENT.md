@@ -1,5 +1,7 @@
 ## Philosophy
 
+Always keep this philosophies in mind
+
 - [Simple, Lovable, Complete](https://blog.asmartbear.com/slc.html)
 - [Your aren't gonna need it](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
 - [Keep it simple, stupid](https://en.wikipedia.org/wiki/KISS_principle)
@@ -8,18 +10,27 @@
 - [Release early, release often](https://en.wikipedia.org/wiki/Release_early,_release_often)
 
 
-Keep the [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) in mind
 
-+ Make each program do one thing well
-  + each program should be responsible for one thing only
+## Standards
 
-* Make each program easily interchangeable
-  * aim for a composition of programs that can be fitted together or arranged in a variety of ways
-  * aim for no dependencies on other programs
+Comply with applicable standards
 
-- Make each program lightweight and fast
-  - design for low footprint on disk, memory and cpu
-  - balance the usage of disk, memory and cpu for efficiency
+- [Filesystem Hierarchy Standard](https://en.m.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
+- [Freedesktop Standards](https://www.freedesktop.org/wiki/Specifications/)
+- [Freedesktop Software](https://www.freedesktop.org/wiki/Software/)
+
+
+
+## Tools
+
+use this tools for development
+
+- [c++](https://isocpp.org/) as programming language
+- [qt](https://www.qt.io/) as gui-toolkit
+- [gcc](https://gcc.gnu.org/) as compiler and linker
+- [moc](https://doc.qt.io/qt-5/moc.html) for qt classes
+- [ninja](https://ninja-build.org/) as built-tool
+
 
 
 ## Documentation
@@ -30,14 +41,12 @@ simple way
 - Avoid scattered documentation
 
 
+
 ## Configuration
 
-- only human-readable plain-text configuration files
+- use only human-readable plain-text configuration files in ini-format
 - the plain-text configuriation files are decisive
-- any gui-configuration-tools are based exclusively on the plaint-text configuration files
-
-
-### Get configuration
+- any gui-configuration-tools must be based exclusively on the plaint-text configuration files
 
 1. compilation default
 2. global configuration-file in /etc/xdg/[program]/[program].conf
@@ -49,14 +58,10 @@ simple way
 - So you can ie keep the general configuration and change just one option.
 
 
-### Format of configuration files
-
-xxx
-
 
 ## Theming
 
-- Use only human-readable plain-text theme files
+- use only human-readable plain-text theme files in qss format
 
 ### Get theme
 1. compilation default
@@ -75,20 +80,13 @@ xxx
 - Settings from actual theme file override settings from previous read theme files.
 - So you can ie keep the general theme and change just one option.
 
-## Tools
-
-- use [c++](https://isocpp.org/) as programming language
-- use [qt](https://www.qt.io/) as gui-toolkit
-- use [gcc](https://gcc.gnu.org/) as compiler and linker
-- use [moc](https://doc.qt.io/qt-5/moc.html) for qt classes
-- use [ninja](https://ninja-build.org/) as built-tool
 
 
 ## Logging
 
-- Implement logging for each program
-- Make logging-target configurable (journald (default), console/stderr)
-- Make loglevel configurable
+- implement logging for each program
+- make logging-target configurable (journald (default), console/stderr)
+- make loglevel configurable
 - log all messages with a loglevel equal or smaller than the given loglevel  
 
 | Level         | Description |
@@ -100,14 +98,6 @@ xxx
 | Debug         | information useful to developers for debugging the application |
 
 
-## Standards
-
-Comply with applicable standards
-
-- [Filesystem Hierarchy Standard](https://en.m.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
-- [Freedesktop Standards](https://www.freedesktop.org/wiki/Specifications/)
-- [Freedesktop Software](https://www.freedesktop.org/wiki/Software/)
-
 
 ## Branches 
 
@@ -116,11 +106,6 @@ Comply with applicable standards
 - commit early and often, do not hide anything
 - create a pull-request for reviewed features or issues
 
-
-> - https://fbrnc.net/blog/2014/12/keeping-it-simple-git-workflow
-> - https://shalikafdo.files.wordpress.com/2016/02/git5.png?w=604&h=402
-> - https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
-> - https://wiki.qt.io/Review_Policy
 
 
 ## Releases
