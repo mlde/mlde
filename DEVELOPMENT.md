@@ -48,13 +48,13 @@ simple way
 - the plain-text configuriation files are decisive
 - configuration options are inherited and overriden by higher priority sources where 0 is the highest priority
 
-| priority | source | description |
-|:---------|:-------|:------------|
-| 0 | argument | single-parameter as argument |
-| 1 | argument | configuration-file as argument |
-| 2 | /home/[user]/.config/[program]/[program].conf | local configuration |
-| 3 | /etc/xdg/[program]/[program].conf | global configuration |
-| 4 | compilation | compilation default |
+| priority | source | scope | description | 
+|:---------|:-------|:------|:------------|
+| 0 | argument | instance | single-parameter as argument |
+| 1 | argument | instance | configuration-file as argument |
+| 2 | ~/.config/[program]/[program].conf | user | user-specific configuration |
+| 3 | /etc/xdg/[program]/[program].conf | system | system-wide configuration |
+| 4 | compilation | system | compilation default |
 
 
 
@@ -73,44 +73,44 @@ simple way
 
 #### set theme
 
-| priority | source | description |
-|:---------|:-------|:------------|
-| 0 | argument | argument to the program |
-| 1 | /home/[user]/.config/[program]/[program].conf | program local configuration |
-| 2 | /etc/xdg/[program]/[program].conf | program global configuration |
-| 3 | /home/[user]/.config/Trolltech.conf | qt local configuration |
-| 4 | /etc/xdg/Trolltech.conf | qt global configuration |
-| 5 | compilation | compilation default |
+| priority | source | scope | description |
+|:---------|:-------|:------|:------------|
+| 0 | argument | instance | argument to the program |
+| 1 | ~/.config/[program]/[program].conf | program, user | user-specific configuration |
+| 2 | /etc/xdg/[program]/[program].conf | program, system | system-wide configuration |
+| 3 | ~/.config/Trolltech.conf | user | user-specific qt configuration |
+| 4 | /etc/xdg/Trolltech.conf | system | qt system configuration |
+| 5 | compilation | system | compilation default |
 
 
 #### load control theme
 
-| priority | source | description |
-|:---------|:-------|:------------|
-| 0 | /home/[user]/.config/[program]/themes/[theme]/ | program local theme |
-| 1 | /usr/share/[program]/themes/[theme]/ | program global theme |
-| 2 | /home/[user]/.themes/[theme]/ | local theme |
-| 3 | /usr/share/themes/[theme]/ | global theme |
+| priority | source | scope |
+|:---------|:-------|:------|
+| 0 | ~/.local/share/themes/[theme]/[program]/main.qss | program, user |
+| 1 | /usr/share/themes/[theme]/[program]/main.qss | program, system |
+| 2 | ~/.local/share/themes/[theme]/qss/main.qss | user |
+| 3 | /usr/share/themes/[theme]/qss/main.qss | system |
 
 
 #### load icon theme
 
-| priority | source | description |
+| priority | source | scope |
 |:---------|:-------|:------------|
-| 0 | /home/[user]/.config/[program]/icons/[theme]/ | program local theme |
-| 1 | /usr/share/[program]/icons/[theme]/ | program global theme |
-| 2 | /home/[user]/.local/share/icons/[theme]/ | local theme |
-| 3 | /usr/share/icons/[theme]/ | global theme |
+| 0 | ~/.local/share/icons/[theme]/[program]/ | program, user |
+| 1 | /usr/share/icons/[theme]/[program]/ | program, system |
+| 2 | ~/.local/share/icons/[theme]/ | user |
+| 3 | /usr/share/icons/[theme]/ | system |
 
 
 #### load color theme
 
 | priority | source | description |
 |:---------|:-------|:------------|
-| 0 | /home/[user]/.config/[program]/color-schemes/[theme].colors | program local theme |
-| 1 | /usr/share/[program]/color-schemes/[theme].colors | program global theme |
-| 2 | /home/[user]/.local/share/color-schemes/[theme].colors | local theme |
-| 3 | /usr/share/color-schemes/[theme].colors | global theme |
+| 0 | ~/.local/share/colors/[theme]/[program].colors | program, user |
+| 1 | /usr/share/colors/[theme]/[program].colors | program, system |
+| 2 | ~/.local/share/colors/[theme].colors | user |
+| 3 | /usr/share/colors/[theme].colors | system |
 
 
 ## Logging
