@@ -73,14 +73,14 @@ simple way
 
 #### set theme
 
-| priority | source | scope | description |
-|:---------|:-------|:------|:------------|
-| 0 | argument | instance | argument to the program |
-| 1 | ~/.config/[program]/[program].conf | program, user | user-specific configuration |
-| 2 | /etc/xdg/[program]/[program].conf | program, system | system-wide configuration |
-| 3 | ~/.config/Trolltech.conf | user | user-specific qt configuration |
-| 4 | /etc/xdg/Trolltech.conf | system | qt system configuration |
-| 5 | compilation | system | compilation default |
+| priority | source | scope |
+|:---------|:-------|:------|
+| 0 | argument | instance |
+| 1 | ~/.config/[program]/[program].conf | program, user |
+| 2 | /etc/xdg/[program]/[program].conf | program, system |
+| 3 | ~/.config/Trolltech.conf | user |
+| 4 | /etc/xdg/Trolltech.conf | system |
+| 5 | compilation-default | system |
 
 
 #### load control theme
@@ -105,7 +105,7 @@ simple way
 
 #### load color theme
 
-| priority | source | description |
+| priority | source | scope |
 |:---------|:-------|:------------|
 | 0 | ~/.local/share/colors/[theme]/[program].colors | program, user |
 | 1 | /usr/share/colors/[theme]/[program].colors | program, system |
