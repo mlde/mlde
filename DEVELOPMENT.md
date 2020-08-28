@@ -47,38 +47,51 @@ simple way
 - use only human-readable plain-text configuration files in ini-format
 - the plain-text configuriation files are decisive
 - any gui-configuration-tools must be based exclusively on the plaint-text configuration files
+- configuration options are inherited and overriden by higher priority sources where 0 is the highest priority
 
-1. compilation default
-2. global configuration-file in /etc/xdg/[program]/[program].conf
-3. local configuration-file in ~/.config/[program]/[program].conf
-4. configuration-file as argument to the program
-5. single-parameter as argument to the program
-
-- Settings from actual configuration file override settings from previous read configuration files.
-- So you can ie keep the general configuration and change just one option.
+| priority | source | description |
+|:---------|:-------|:------------|
+| 0 | argument | single-parameter as argument to the program |
+| 1 | argument | configuration-file as argument to the program |
+| 2 | /home/[user]/.config/[program]/[program].conf | local configuration-file |
+| 3 | /etc/xdg/[program]/[program].conf | global configuration-file |
+| 4 | compilation | compilation default |
 
 
 
 ## Theming
 
-- use only human-readable plain-text theme files in qss format
+there are different themes used
 
-### Get theme
+window theme
+icon theme
+color theme
+control theme
+sound theme
+
+
+
+- use only human-readable plain-text theme files
+- since we use qt toolkit, use the [qss format](https://doc.qt.io/qt-5/stylesheet-syntax.html)
+
+#### Get theme
+
 1. compilation default
-2. global qt-configuration
-3. local qt-configuration
-4. global app configuriation in /etc/xdg/app/app.conf
-5. local app configuration in ~/.config/app/app.conf
+2. global qt-configuration in /etc/xdg/Trolltech.conf
+3. local qt-configuration in /home/[user]/.config/Trolltech.conf
+4. global app configuriation in /etc/xdg/[program]/[program].conf
+5. local app configuration in /home/[user]/.config/[program]/[program].conf
 6. argument to the app
 
-### Load theme
-1. global theme in [missing]
-2. local theme in ~/[missing]
-3. global theme from app in [missing]
+#### Load theme
+
+1. global theme in /usr/share/themes/[theme]/
+2. local theme in /home/[user]/.themes/[theme]/
+3. global theme from app in [missing] 
 4. local theme from app in ~/[missing]
 
-- Settings from actual theme file override settings from previous read theme files.
-- So you can ie keep the general theme and change just one option.
+- settings from actual theme file override settings from previous read theme files
+- so you can ie keep the general theme and change just one option.
 
 
 
