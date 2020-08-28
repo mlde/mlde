@@ -34,7 +34,7 @@ Please open an issue on github.
 
 ## Contributions
 
-Did we already mention that you are awesome? Please look through the open [issues](issues) here on github.
+Did we already mention that you are awesome? Please look through the open issues here on github.
 
 - If you have any questions simply respond to the issue
 - Please keep our [development philosophy](https://github.com/mlde/mlde/blob/master/DEVELOPMENT.md) in mind
